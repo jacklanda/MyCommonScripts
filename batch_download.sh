@@ -1,4 +1,11 @@
 #! /bin/zsh
+# the input_file's format like below,
+# split with punc ':' between website name
+# and website target url:
+#
+# google: https://google.com
+# amazon: https://www.amazon.com
+# ...
 
 if [ $# -lt 1 ]; then
     echo -e "\nusage: sh wget_batch_download.sh [input_batch_url_file]\n"
